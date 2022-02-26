@@ -4,6 +4,8 @@
 #include <iostream>
 
 #include "LoaderParams.h"
+#include"SDL.h"
+#include"Vector2D.h"
 
 class GameObject
 {
@@ -16,6 +18,7 @@ public:
 protected:
 
 	GameObject(const LoaderParams* pParams) {}
+
 	virtual ~GameObject() {}
 };
 

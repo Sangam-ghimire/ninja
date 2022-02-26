@@ -8,7 +8,7 @@ private:
 	float m_y;
 
 public:
-	Vector2D(float x,float y) : m_x(x) , m_y(y) {}// using intialization list
+	Vector2D(float x, float y) : m_x(x), m_y(y) {}// using intialization list
 
 	float getX() { return m_x; }
 	float getY() { return m_y; }
@@ -79,7 +79,6 @@ public:
 			(*this) *= 1 / 1;
 		}
 	}
-
 };
-
+typedef Vector2D TheVector;
 #endif

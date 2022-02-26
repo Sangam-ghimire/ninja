@@ -3,7 +3,7 @@
 #include"GameObject.h"
 #include<vector>
 
-class GameObject;
+//class GameObject;
 
 class PlayState :public GameState
 {

@@ -2,6 +2,8 @@
 
 #include<iostream>
 #include"Game.h"
+#include"Board.h"
+
 
 InputHandler* InputHandler::s_pInstance = 0;
 
@@ -66,6 +68,8 @@ void InputHandler::onMouseButtonDown(SDL_Event& event)
 	{
 		m_mouseButtonStates[RIGHT] = true;
 	}
+	TheBoard::Instance()->coordinate();
+
 }
 
 void InputHandler::onMouseButtonUp(SDL_Event& event)
@@ -90,6 +94,7 @@ void InputHandler::onMouseMove(SDL_Event& event)
 {
 	m_mousePosition->setX(event.motion.x);
 	m_mousePosition->setY(event.motion.y);
+
 }
 
 void InputHandler::onKeyDown()

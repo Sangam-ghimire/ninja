@@ -13,6 +13,6 @@ public:
 		return s_pInstance;
 	}
 	void createBoard();
-
+	void coordinate();
 };
 typedef Board TheBoard;

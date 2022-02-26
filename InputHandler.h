@@ -27,7 +27,7 @@ private:
 
 	std::vector<bool> m_mouseButtonStates;
 
-	Vector2D* m_mousePosition = NULL;
+	//Vector2D* m_mousePosition = NULL;
 	const Uint8* m_keystates= NULL;
 
 	//handle Keyboard events
@@ -40,6 +40,7 @@ private:
 	void onMouseButtonUp(SDL_Event& event);
 
 public:
+	Vector2D* m_mousePosition = NULL;
 	static InputHandler* Instance()
 	{
 		if (s_pInstance == 0)

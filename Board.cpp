@@ -4,8 +4,11 @@
 #include"GameObject.h"
 #include"SDLGameObject.h"
 #include"LoaderParams.h"
+#include"InputHandler.h"
+#include"Vector2D.h"
 
 Board* TheBoard::s_pInstance = 0;
+
 void Board::createBoard() {
 	bool white = true;
 	SDL_SetRenderDrawColor(TheGame::Instance()->getRenderer(), 255, 255, 255, 255);
@@ -33,5 +36,9 @@ void Board::createBoard() {
 		white = !white;
 	}//ok	
 	
+}
+void Board::coordinate() {
+	std::cout << "Mouse position=x:" << TheInputHandler::Instance()->m_mousePosition->getX() << ",y:" << TheInputHandler::Instance()->m_mousePosition->getY()<< std::endl;
+
 }
 

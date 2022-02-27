@@ -14,5 +14,19 @@ public:
 	}
 	void createBoard();
 	void coordinate();
+	void filtercoordinate();
+	
+	int getR_X() { return R_X; }
+	int getR_Y() { return R_Y; };
+
+	void setRX(int X) { R_X = X; }
+	void setRY(int Y) { R_Y = Y; }
+
+	virtual void render();
+private:
+	int R_X;
+	int R_Y;
+
+
 };
 typedef Board TheBoard;

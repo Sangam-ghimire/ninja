@@ -41,6 +41,7 @@ private:
 
 public:
 	Vector2D* m_mousePosition = NULL;
+	Vector2D* m_renderPosition = NULL;
 	static InputHandler* Instance()
 	{
 		if (s_pInstance == 0)

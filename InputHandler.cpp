@@ -69,6 +69,7 @@ void InputHandler::onMouseButtonDown(SDL_Event& event)
 		m_mouseButtonStates[RIGHT] = true;
 	}
 	TheBoard::Instance()->coordinate();
+	//TheBoard::Instance()->filtercoordinate();
 
 }
 
